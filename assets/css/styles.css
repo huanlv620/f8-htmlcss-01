@@ -50,7 +50,15 @@ a {
     overflow: hidden;
 }
 /* Header */
-.header {
+.fixed-header {
+    padding-top: 26px;
+    background-color: #e6f0ff;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
     position: relative;
     background-color: #e6f0ff;
     height: 100vh;
@@ -59,7 +67,7 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0px;
 }
 
 .navbar .actions {
@@ -96,7 +104,7 @@ a {
 
 /* Header - Hero */
 .hero {
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .hero .info {
