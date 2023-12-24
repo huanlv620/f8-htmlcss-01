@@ -1,0 +1,99 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .toggle-menu,
+    .mobile-header,
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991.8px) {
+    .navbar {
+        position: relative;
+    }
+
+    .logo-link {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        padding: 60px;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        color: #333;
+        font-weight: 500;
+        padding: 14px 0;
+    }
+
+    .menu-drawer ul a:hover {
+        background-color: #f0f0f0;
+        color: #292929;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 40px;
+    }
+
+    .navbar .actions {
+        display: none;
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+}
