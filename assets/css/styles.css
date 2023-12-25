@@ -197,8 +197,8 @@ a {
 
 /* GUIDE */
 .guides {
-    margin-top: 40px;
-    padding: 93px 0 79px;
+    margin-top: 20px;
+    padding: 113px 0 79px;
 }
 
 .guides .sub-title {
@@ -388,9 +388,10 @@ a {
 /* Stats */
 
 .stats {
-    margin-top: 75px;
-    padding: 50px 0px;
+    margin-top: 25px;
+    padding: 100px 0px 50px;
 }
+
 .stats .content {
     width: 1048px;
 }
@@ -421,12 +422,23 @@ a {
     background-color: #fff;
 }
 
+.stats-trend .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
 .stats-trend .value {
     font-weight: 700;
     font-size: 2.6rem;
     flex: 1;
     letter-spacing: 0.01em;
     color: #000339;
+}
+
+.stats-trend .stats-trend__img {
+    width: 28px;
+    justify-self: end;
 }
 
 .stats-trend .desc {
@@ -616,6 +628,10 @@ a {
     font-weight: 400;
     font-size: 1.6rem;
     color: #7a7a7e;
+}
+
+.footer .item a:hover {
+    text-decoration: underline;
 }
 
 .footer .desc {
