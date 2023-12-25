@@ -73,6 +73,36 @@
         background-color: #f0f0f0;
         color: #292929;
     }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-wrap .info {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-wrap .desc {
+        width: 80%;
+        margin: 30px auto auto;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guide-item {
+        margin: 0;
+        flex: 1;
+    }
+
+    .feature .list {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
 }
 
 /* Tablet */
